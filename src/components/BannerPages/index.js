@@ -71,8 +71,6 @@ export default function BannerPages(props) {
       visit_time,
     };
 
-    console.log("[Contact] payload envoyé :", payload);
-
     // Appel de l'api pour insérer les données reçues
     const res = await fetch("/api/contact", {
       method: "POST",
@@ -81,9 +79,8 @@ export default function BannerPages(props) {
     });
 
     if (res.ok) {
-      // Si ok, envoie des données à sauvegarder
-      const saved = await res.json();
-      console.log("[Contact] enregistré en base :", saved);
+      // Si ok, on envoie les données à sauvegarder
+      await res.json();
 
       // Réinitilialisation des champs dans l'UI
       setForm({

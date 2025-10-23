@@ -87,7 +87,6 @@ export default async function handler(req, res) {
           created_at: new Date().toISOString(),
         };
 
-        console.log("[API] Contact saved:", saved);
         return res.status(201).json(saved);
       } catch (e) {
         console.error(e);
