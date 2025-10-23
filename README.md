@@ -13,7 +13,8 @@
     ![Message de confirmation après envoie](image-3.png)
 
 3. Démarrage de l'environnement :
-        - Cloner le projet  : git clone <lien-du-dépôt>
+
+        - Cloner le projet  : git clone <https://github.com/andriamanomemamy05-a11y/test_templin_todisoa.git>
 
         - Installer les dépendances : ```npm install```
 
