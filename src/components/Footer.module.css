@@ -1,0 +1,157 @@
+
+.infContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer {
+  background: #292e36;
+  color: #e0dfd6;
+  padding: 0;
+  font-family: "Montserrat", "all-round-gothic-bold", Arial, sans-serif;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 -2px 24px 0 rgba(0, 0, 0, 0.13);
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 2.5rem 0 1.5rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logoSection {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(0 2px 8px rgba(80, 60, 30, 0.08));
+}
+
+.infoSection {
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  color: #f5f3ee;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.icon {
+  color: #c2a97e;
+  font-size: 1.1em;
+  min-width: 1.2em;
+  margin-right: 0.2em;
+  opacity: 0.85;
+}
+
+.link {
+  color: #e2cfa3;
+  text-decoration: underline;
+  transition: color 0.2s;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.link:hover {
+  color: #fffbe6;
+}
+
+/* <= 900px : structure plus simple */
+@media (max-width: 900px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+/* <= 700px : corrections mobile principales */
+@media (max-width: 700px) {
+  .footer {
+    padding: 12px 16px; /* padding latéral */
+  }
+
+  .footerContent {
+    padding: 1rem 0 0.75rem 0;
+    gap: 1rem;
+  }
+
+  .logoSection {
+    flex: 0 0 auto;
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+
+  .logo {
+    width: 96px !important;
+    height: auto !important;
+  }
+
+  .infContainer {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .infoSection {
+    min-width: 0;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .infoItem {
+    align-items: flex-start;
+    gap: 0.55em;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  .icon {
+    font-size: 1em;
+    min-width: 1.15em;
+    margin-top: 2px;
+  }
+
+  .link {
+    word-break: break-word;
+  }
+}
+
+/* <= 360px : micro-ajustements */
+@media (max-width: 360px) {
+  .footer {
+    padding: 10px 12px;
+  }
+
+  .logo {
+    width: 84px !important;
+  }
+
+  .infoItem {
+    font-size: 0.78rem;
+  }
+}
